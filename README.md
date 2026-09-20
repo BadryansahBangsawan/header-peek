@@ -104,6 +104,7 @@ rm -rf "$HOME/Library/Application Support/Header Peek"
 | “Damaged” / cannot verify | `xattr -cr /Applications/HeaderPeek.app`. `spctl --assess` is `rejected` even when it runs. |
 | **URL must be http or https.** | Use an `http` or `https` URL. |
 | **Invalid URL** | The field is empty or not a URL. |
+| Field rejects `example.com` | Prefix `https://`. The extra only accepts `http`/`https` URLs, not a bare host. |
 | **Stopped after 10 redirects.** | The URL redirected more than 10 times. |
 | ~10px empty strip under the bar | Reinstall from this repo (panel min height 420). |
 
